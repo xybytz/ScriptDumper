@@ -44,7 +44,7 @@ Text.Text = "Saving."
 wait(0.5)
 for i,v in pairs(workspace:GetDescendants()) do
 	save("Workspace",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
@@ -52,7 +52,7 @@ for i,v in pairs(workspace:GetDescendants()) do
 end
 for i,v in pairs(game:GetService("ReplicatedStorage"):GetDescendants()) do
 	save("ReplicatedStorage",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
@@ -60,7 +60,7 @@ for i,v in pairs(game:GetService("ReplicatedStorage"):GetDescendants()) do
 end
 for i,v in pairs(game:GetService("ReplicatedFirst"):GetDescendants()) do
 	save("ReplicatedFirst",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder")  or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
@@ -68,14 +68,14 @@ for i,v in pairs(game:GetService("ReplicatedFirst"):GetDescendants()) do
 end
 for i,v in pairs(game:GetService("Players"):GetDescendants()) do
 	save("Players",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
 end
 for i,v in pairs(game:GetService("StarterGui"):GetDescendants()) do
 	save("StarterGui",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
@@ -83,7 +83,7 @@ for i,v in pairs(game:GetService("StarterGui"):GetDescendants()) do
 end
 for i,v in pairs(game:GetService("StarterPack"):GetDescendants()) do
 	save("StarterPack",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
@@ -91,7 +91,7 @@ for i,v in pairs(game:GetService("StarterPack"):GetDescendants()) do
 end
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
 	save("LocalPlayer/Backpack",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
@@ -99,7 +99,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants(
 end
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetDescendants()) do
 	save("LocalPlayer/PlayerGui",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
@@ -107,7 +107,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetDescendants
 end
 for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
 	save("LocalPlayer/Character",v)
-	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("Script") or v:IsA("ModuleScript") then
+	if v:IsA("LocalScript") or v:IsA("Folder") or v:IsA("ModuleScript") then
 		Text.Text = "Saved "..v.Name.." ("..v:GetFullName()..")"
 		x += 1
 	end
